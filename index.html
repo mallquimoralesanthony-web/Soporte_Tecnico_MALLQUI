@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico MALLQUI - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome para los íconos de las tarjetas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. CABECERA CON TU LOGO -->
+    <header class="navbar">
+        <div class="logo-container">
+            <!-- AQUÍ VA TU LOGO (logo-mallqui.jpg) -->
+            <img src="logo-mallqui.jpg" alt="Logo Soporte Técnico MALLQUI" class="logo-img">
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="especialidad.html">Especialidad</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. BANNER PRINCIPAL CON TU IMAGEN DE FIGMA Y BOTONES -->
+    <section class="hero-banner">
+        <div class="banner-container">
+            <!-- AQUÍ VA TU BANNER DE FIGMA (banner-mallqui.jpg) -->
+            <img src="banner-mallqui.jpg" alt="Reparación Electrónica de Precisión" class="banner-img">
+            
+            <!-- Botones sobre la imagen -->
+            <div class="banner-overlay-buttons">
+                <a href="especialidad.html" class="btn btn-blue">Conoce nuestra especialidad &rarr;</a>
+                <a href="#servicios-sec" class="btn btn-outline">Ver servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN DE SERVICIOS -->
+    <main class="services-section" id="servicios-sec">
+        <div class="section-tag">__nuestros servicios</div>
+        <h2 class="section-title">soluciones tecnológicas para tu futuro</h2>
+        <p class="section-description">
+            brindamos soporte y servicios en las principales áreas de la tecnología de la información y comunicaciones.
+        </p>
+
+        <div class="services-grid">
+            <!-- Tarjeta Laptops -->
+            <a href="servicios.html#laptops" class="service-card">
+                <div class="icon-circle"><i class="fa-solid fa-laptop"></i></div>
+                <h3>Reparación de Laptops</h3>
+                <p>Diagnóstico y reparación de fallas de hardware, software y sistemas en laptops y portátiles.</p>
+            </a>
+
+            <!-- Tarjeta PC -->
+            <a href="servicios.html#pc" class="service-card">
+                <div class="icon-circle"><i class="fa-solid fa-desktop"></i></div>
+                <h3>Soporte de PC y Estaciones de Trabajo</h3>
+                <p>Mantenimiento preventivo, correctivo y optimización de computadoras de escritorio.</p>
+            </a>
+
+            <!-- Tarjeta Impresoras -->
+            <a href="servicios.html#impresoras" class="service-card">
+                <div class="icon-circle"><i class="fa-solid fa-print"></i></div>
+                <h3>Mantenimiento de Impresoras</h3>
+                <p>Reparación de hardware y software para todo tipo de impresoras.</p>
+            </a>
+
+            <!-- Tarjeta Celulares -->
+            <a href="servicios.html#celulares" class="service-card">
+                <div class="icon-circle"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <h3>Soporte para Celulares</h3>
+                <p>Reparación de pantallas, baterías, software y otros componentes de dispositivos móviles.</p>
+            </a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Soporte Técnico MALLQUI. Soluciones confiables, resultados reales.</p>
+    </footer>
+
+</body>
+</html>

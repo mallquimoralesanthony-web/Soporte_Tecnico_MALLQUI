@@ -1,0 +1,221 @@
+/* CONFIGURACIÓN Y FUENTES GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* NAVBAR / CABECERA */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b1120;
+    padding: 12px 5%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-img {
+    height: 48px;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #38bdf8;
+}
+
+/* BANNER HERO (IMAGEN Y BOTONES) */
+.hero-banner {
+    width: 100%;
+    background-color: #051329;
+}
+
+.banner-container {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* UBICACIÓN DE BOTONES EN EL BANNER */
+.banner-overlay-buttons {
+    position: absolute;
+    bottom: 9%;
+    left: 4.8%;
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+}
+
+.btn {
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-blue {
+    background-color: #0088ff;
+    color: #ffffff;
+    border: 1px solid #0088ff;
+}
+
+.btn-blue:hover {
+    background-color: #0066cc;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: rgba(11, 25, 44, 0.7);
+    color: #ffffff;
+    border: 1px solid #38bdf8;
+}
+
+.btn-outline:hover {
+    background-color: #38bdf8;
+    color: #0b1120;
+    transform: translateY(-2px);
+}
+
+/* SECCIÓN DE SERVICIOS */
+.services-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-tag {
+    color: #14b8a6;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+}
+
+.section-description {
+    color: #475569;
+    font-size: 1.05rem;
+    margin-bottom: 35px;
+}
+
+/* REJILLA DE TARJETAS */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #f1f5f9;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-color: #0284c7;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #0f172a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.icon-circle i {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.service-card p {
+    font-size: 0.88rem;
+    color: #64748b;
+    line-height: 1.4;
+}
+
+/* PÁGINAS INTERNAS */
+.page-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content-box {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0b1120;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
